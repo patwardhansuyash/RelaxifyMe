@@ -9,8 +9,8 @@ if('caches' in window){
     caches.open('data').then((cachex)=>{
         cachex.addAll([
             '/index.html',
-            '/undraw_yoga_248n.svg',
-            '/app.js'
+            '/undraw_yoga_248n.svg'
+           
         ])
     })
 }
