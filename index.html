@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+
+    <style>
+        body{
+            background-image: linear-gradient(to bottom, #ee5788, #ee88bc, #eab4e2, #eddcf7, #ffffff);  
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+           
+        }
+         .circle{
+            background-color: #FFF222;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: auto;
+            position: absolute;
+            top :200px;
+            left: 40px;
+            z-index: 1;
+        } 
+        #wrapper{
+            width: 300px;
+            margin: auto;
+            position: relative;
+            margin-top: -5
+            0px;
+        }
+        .pseudo{
+            position: relative;
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 5px;
+            z-index: -1;
+            
+        }
+
+        .pseudoactive{
+            animation: circle forwards linear 13s  infinite;
+        }
+
+        #heart{
+            width: 120px;
+            height: 120px;
+            background-color:#fff1d6;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            top :90px;
+            left: 90px;
+            margin: auto;
+            color: black;
+        }
+        #heart::before{
+            content: '';
+            width: 150px;
+            height: 150px;
+            background-color: transparent;
+            border-radius: 50%;
+            position: absolute;
+            margin: auto;
+            border-top: 5px solid #fff1d6;
+            border-right: 5px solid #0f2243;
+            border-left: 5px solid #FF4848;
+            border-bottom: 5px solid #FF4848;
+            animation: text forwards linear 13s  infinite;
+            
+            
+        }
+        
+
+        @keyframes circle{
+            /* from { transform: rotate(0deg) translateX(200px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(200px) rotate(-360deg); }
+        } */
+
+        from{
+            transform: rotate(0);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+        }
+
+    #message{
+        animation: text forwards linear 13s  infinite;
+        font-weight: lighter;
+    }
+
+
+    
+
+    .in{
+        transform: scale(1.2);
+        transition: ease-in-out 4s;
+        width: 120px;
+        height: 120px;
+        background-color: #B83227;
+         border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top :90px;
+        left: 90px;
+        margin: auto;   
+        
+    }
+    .out{
+        transform: scale(1);
+        transition: ease-in-out 5.7s;
+        width: 120px;
+        height: 120px;
+        background-color: #B83227;
+         border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top :90px;
+        left: 90px;
+        margin: auto; 
+    }
+
+    h1{
+        letter-spacing: .2rem;
+        padding: 20px 20px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+    }
+    a{
+        text-align: center;
+        margin: auto;
+        display: block;
+        color: white;
+        text-decoration: none;
+        margin-top:-10px;
+        font-weight: bolder;
+        padding: 8px 4px;
+        width: 70px;
+        border-radius: 10px;
+        background-color: #fa113c;
+    }
+    
+    #fit{
+        background: url(./undraw_mindfulness_scgo.svg) no-repeat center center/cover;
+        max-width: 400px;
+        height: 300px;
+        margin: auto;
+        margin-top: -100px;
+    }
+   
+        
+    
+    </style>
+</head>
+<body>
+    <header><h1>RelaxifyMe</h1></header>
+    <div id="wrapper">
+        <div id="heart">
+            <p id="message"></p>
+        </div>
+    </div>
+    <div id="pseudox" class="pseudo">
+        <div class="circle"></div>
+    </div>
+    <a  id="btn" href="#">Start</a>
+
+   <div id="fit"></div>
+    <script src="/App.js"></script>
+</body>
+</html>
