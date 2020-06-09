@@ -4,7 +4,7 @@ self.addEventListener('install',(e)=>{
     .then((cache)=>{
         cache.addAll([
             '/',
-            '/play.html',
+            '/index.html',
             '/undraw_yoga_248n.svg',
             '/app.js'
 
