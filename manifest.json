@@ -19,7 +19,7 @@
       }
     
     ],
-    "start_url": "/play.html",
+    "start_url": "/index.html",
     "scope": ".",
     "display": "standalone",
     "orientation": "portrait-primary",
