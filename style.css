@@ -155,8 +155,8 @@ to   { transform: rotate(360deg) translateX(200px) rotate(-360deg); }
 .in {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  -webkit-transition: ease-in-out 4s;
-  transition: ease-in-out 4s;
+  -webkit-transition: ease-in-out 5s;
+  transition: ease-in-out 5s;
   width: 120px;
   height: 120px;
   background-color: #B83227;
