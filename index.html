@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RelaxifyMe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <header><h1>RelaxifyMe</h1></header>
+    <div id="wrapper">
+        <div id="heart">
+            <p id="message"></p>
+        </div>
+    </div>
+    <div id="pseudox" class="pseudo">
+        <div class="circle"></div>
+    </div>
+    <a  id="btn" href="#">Start</a>
+
+   <div id="fit"></div>
+   <div style="visibility: hidden;"  id="quote">"Inhale the future, exhale the past."</div>
+   <audio id="background" loop>
+    <source id="src" src="/sounds/background.mp3" type="audio/mp3">
+    </audio>
+   <audio id="inhale">
+    <source id="src" src="/sounds/inhale.mp3" type="audio/mp3">
+    </audio>
+    <audio id="hold">
+        <source id="src" src="/sounds/hold.mp3" type="audio/mp3">
+        </audio>
+        <audio id="exhale">
+            <source id="src" src="/sounds/exhale.mp3" type="audio/mp3">
+            </audio>
+    <footer><h6 id="dev" style="margin-top: 50px;">Developed by <a href="https://github.com/patwardhansuyash/RelaxifyMe">@patwardhansuyash</a></h6></footer>
+    <script src="/App.js"></script>
+</body>
+</html>
