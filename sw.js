@@ -1,6 +1,6 @@
 self.addEventListener('install',(e)=>{
     console.log('Service Worker Installed',e)
-    e.waitUntil(caches.open('Static')
+    e.waitUntil(caches.open('Static-2')
     .then((cache)=>{
         cache.addAll([
             '/',
